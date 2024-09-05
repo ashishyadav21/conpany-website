@@ -1,113 +1,128 @@
-import Image from "next/image";
+import Link from 'next/link';
+import CustomImage from '@/components/CustomImage';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div>
+      <div className="scroll-snap-y scroll-smooth">
+
+        <section className="h-screen bg-home-background bg-cover z-10 bg-center flex items-center justify-center">
+          <div className="h-screen bg-gradient-conic bg-cover z-10 bg-center flex items-center justify-center">
+          </div>
+        </section>
+
+        <section className="bg-white flex justify-center py-10">
+          <div className="container max-w-4xl p-5 flex flex-col items-center">
+            <div className="text-center text-gray-700 font-medium text-2xl sm:text-lg p-5 mt-5">
+              <h3 className="font-serif">
+                We power digital transformation for modern enterprises and new product development for visionary startups with our expertise across Design, Multi Cloud, Data Engineering, Analytics, Machine Learning, AI, and Blockchain.
+              </h3>
+            </div>
+            <h2 className="text-lg sm:text-sm mt-4 font-light text-gray-500 text-center">
+              We love taking your vision to reality.
+            </h2>
+            <div className="mt-10">
+              <button className="w-[150px] h-12 sm:text-sm rounded-xl bg-white text-lg text-[#3c4aed] shadow-sm shadow-[#096ad0] transition-all duration-300 ease-in-out hover:bg-[#096ad0] hover:text-white hover:-translate-y-1">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section className="h-auto md:h-screen bg-white flex justify-center">
+          <div className="container w-full p-5 flex flex-col md:flex-row items-center">
+            <div className="md:basis-1/2 sm:basis-full flex-col">
+              <div className="h-full w-[90%] p-10">
+                <h1 className="text-gray-700 text-3xl md:text-4xl font-extrabold m-4">Welcome to GreenField!</h1>
+                <p className="text-gray-600 text-xl font-light m-4 leading-normal">
+                  The world is seeing unprecedented Digital Transformation across all businesses...
+                  <br></br>
+                  At GreenField we have prepared ourselves with our 14 years of experience to make this journey seamless and cost-effective for you.
+                  <br></br>
+                </p>
+                <Link href="/">
+                  <div className="text-[#3c4aed] underline text-sm items-center m-4">Read More...</div>
+                </Link>
+              </div>
+            </div>
+            <div className="md:basis-1/2 sm:basis-full flex justify-center items-center">
+              <CustomImage
+                src="/images/developer_word_1.png"
+                alt='Developer_Work'
+                width={500}
+                height={700}
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="h-auto bg-white flex justify-center">
+          <div className="container w-full p-5 flex flex-col md:flex-row items-center">
+            <div className="md:basis-1/2 sm:basis-full flex justify-center items-center">
+              <CustomImage
+                src="/images/tech-stack.png"
+                alt='Developer_Work'
+                width={600}
+                height={500}
+              />
+            </div>
+            <div className="md:basis-1/2 sm:basis-full flex-col">
+              <div className="h-full w-[90%] p-10">
+                <h1 className="text-gray-700 text-3xl md:text-4xl font-extrabold m-4">60+ Technologies Covered</h1>
+                <p className="text-gray-600 text-xl font-light m-4 leading-normal">
+                  We embrace new technologies by partnering with OEMs/Platform owners for Early Access Programs...
+                  <br></br>
+                </p>
+                <Link href="/">
+                  <div className="text-[#3c4aed] underline text-sm items-center m-4">Read More...</div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="h-auto md:h-[624px] bg-white flex justify-center">
+          <div className="container w-full p-5 flex flex-col md:flex-row items-center">
+            <div className="md:basis-1/2 sm:basis-full flex-col">
+              <div className="h-full w-[90%] p-10">
+                <h1 className="text-gray-700 text-3xl md:text-4xl font-extrabold m-4">10+ Domains</h1>
+                <p className="text-gray-600 text-xl font-light m-4 leading-normal">
+                  In the last 2 years, we have built Digital Solutions cutting across e-Commerce, Supply Chain, Logistics, Social Networks...
+                  <br></br>
+                </p>
+                <Link href="/">
+                  <div className="text-[#3c4aed] underline text-sm items-center m-4">Read More...</div>
+                </Link>
+              </div>
+            </div>
+            <div className="md:basis-1/2 sm:basis-full flex justify-center items-center">
+              <CustomImage
+                src="/images/domain_2.png"
+                alt='Developer_Work'
+                width={500}
+                height={700}
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="h-auto bg-white flex justify-center">
+          <div className="container w-full p-5 flex flex-col items-center justify-center">
+            <div className="flex justify-between items-center flex-col p-10">
+              <h1 className="slide-in-left text-4xl md:text-5xl text-nowrap sm:text-wrap font-bold text-[#3c4aed] m-2">
+                Take a Step for Your
+              </h1>
+              <h3 className="slide-in-right text-2xl md:text-3xl font-normal text-gray-600">
+                Business Success
+              </h3>
+              <button className="w-[180px] p-2 h-12 rounded-xl bg-[#ffcf66] text-lg text-white shadow-sm shadow-yellow-200 transition-all duration-300 ease-in-out hover:-translate-y-1 mt-6">
+                14 Day Free Trial
+              </button>
+            </div>
+          </div>
+        </section>
+
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
