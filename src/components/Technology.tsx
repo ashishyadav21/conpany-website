@@ -1,18 +1,18 @@
 import React from "react";
+import CustomImage from '@/components/CustomImage';
 
 const Technology = () => {
   let width = {
     width: "400px",
   };
   return (
-    <div>
+    <>
+      <div className="bg-technology-image w-full h-80 bg-cover bg-center bg-opacity-90 bg-scroll bg-no-repeat">
 
-      <div>
-        <img src="/images/technologybaner2.jpg" alt="" style={{width:"100%", maxHeight:"500px"}}/>
       </div>
 
-      <div className="container grid gap-8 m-auto my-5 text-center md:text-left">
-        <div className="grid gap-4 text-center pt-8">
+      <div className="container flex flex-col gap-4 m-auto my-5 text-center md:text-left">
+        <div className="flex flex-col gap-4 text-center pt-8">
           <h1 className="text-4xl">Adopting cutting edge technologies</h1>
           <h3 className="text-2xl font-thin">
             Early adoption and implementations with newer and better
@@ -24,32 +24,29 @@ const Technology = () => {
           </p>
         </div>
 
-        <div className="md:flex my-5 pt-8 justify-between items-center lg:px-12">
-          <div className="flex flex-col gap-4 md:w-2/5 md:px-6">
+        <div className="flex flex-col md:flex-row my-5 pt-8 justify-between items-center">
+          <div className="flex flex-col basis-full md:basis-1/2 gap-4 px-4 md:px-6">
             <h2 className="text-3xl font-extrabold">Backend</h2>
             <p className="text-base font-extralight">
-              Scalability and Security of any Digital Platform depends on the
-              backend systems. In the last 14+ years, we have built backend
-              systems to support secure B2B enterprise platforms as well as B2C
-              platforms that need to generate/process transactions across
-              millions of concurrent users. Our solutions include.
+              Scalability and Security of any Digital Platform depends on the backend systems. In the last 14+ years, we have built backend systems to support secure B2B enterprise platforms as well as B2C platforms that need to generate/process transactions across millions of concurrent users. Our solutions include:
             </p>
             <p className="text-base font-extralight">
-              Our team can help you architect, engineer and build backend
-              systems for enterprise applications, B2C / B2B software products
-              and SaaS solutions using prevalent secure, portable, and scalable
-              backend frameworks.
+              Our team can help you architect, engineer, and build backend systems for enterprise applications, B2C/B2B software products, and SaaS solutions using prevalent secure, portable, and scalable backend frameworks.
             </p>
           </div>
-          <img
-            src="/images/backend.png"
-            className="md:w-1/2 m-auto"
-            style={width}
-          />
+          <div className="basis-full md:basis-1/2 flex justify-center">
+            <CustomImage
+              src="/images/backend.png"
+              alt="backend-image"
+              width={315}
+              height={350}
+            />
+          </div>
         </div>
 
-        <div className="md:flex my-5 pt-8 justify-between items-center lg:px-12">
-          <div className="flex flex-col gap-4 md:w-2/5 md:order-2">
+
+        <div className="flex flex-col md:flex-row-reverse my-5 pt-8 justify-between items-center">
+          <div className="flex flex-col basis-full md:basis-1/2 gap-4 px-4 md:px-6">
             <h2 className="text-3xl font-extrabold">Web</h2>
             <p className="text-base font-extralight">
               We build high impact web solutions for enterprises and startups
@@ -60,16 +57,17 @@ const Technology = () => {
               startups such as BigBasket, Samsung and more.
             </p>
           </div>
-          <img
-            src="/images/WEB.png"
-            alt=""
-            className="md:w-1/2 md:order-1 m-auto"
-            style={width}
-          />
+          <div className="basis-full md:basis-1/2 flex justify-center">
+            <CustomImage
+              src="/images/WEB.png"
+              alt=""
+              width={315}
+              height={350} />
+          </div>
         </div>
 
-        <div className="md:flex my-5 pt-8 justify-between items-center lg:px-12">
-          <div className="flex flex-col gap-4 md:w-2/5">
+        <div className="flex flex-col md:flex-row my-5 pt-8 justify-between items-center">
+          <div className="flex flex-col basis-full md:basis-1/2 gap-4 px-4 md:px-6">
             <h2 className="text-3xl font-extrabold">Mobile</h2>
             <p className="text-base font-extralight">
               Divum, as an organization, started with the start of the Mobile
@@ -81,16 +79,17 @@ const Technology = () => {
               revolution in India.
             </p>
           </div>
-          <img
-            src="/images/MOBILE.png"
-            alt=""
-            className="md:w-1/2 m-auto"
-            style={width}
-          />
+          <div className="flex basis-full md:basis-1/2 justify-center">
+            <CustomImage
+              src="/images/MOBILE.png"
+              alt=""
+              width={315}
+              height={350} />
+          </div>
         </div>
 
-        <div className="md:flex my-5 pt-8 justify-between items-center lg:px-12">
-          <div className="flex flex-col gap-4 md:w-2/5 md:order-2">
+        <div className="flex flex-col md:flex-row-reverse my-5 pt-8 justify-between items-center">
+          <div className="flex flex-col basis-full md:basis-1/2 gap-4 px-4 md:px-6">
             <h2 className="text-3xl font-extrabold">
               Cloud Computing Technologies
             </h2>
@@ -102,16 +101,17 @@ const Technology = () => {
               a certified partner of AWS Partner Network.
             </p>
           </div>
-          <img
-            src="/images/AWS.png"
-            alt=""
-            className="md:w-1/2 md:order-1 m-auto"
-            style={width}
-          />
+          <div className="flex basis-full md:basis-1/2 justify-center">
+            <CustomImage
+              src="/images/AWS.png"
+              alt=""
+              width={400}
+              height={350} />
+          </div>
         </div>
 
-        <div className="md:flex my-5 pt-8 justify-between items-center lg:px-12">
-          <div className="flex flex-col gap-4 md:w-2/5">
+        <div className="flex flex-col md:flex-row my-5 pt-8 justify-between items-center">
+          <div className="flex flex-col basis-full md:basis-1/2 gap-4 px-4 md:px-6">
             <h2 className="text-3xl font-extrabold">Google</h2>
             <p className="text-base font-extralight">
               We have leveraged most of the technologies and services offered on
@@ -133,16 +133,17 @@ const Technology = () => {
               App Engine and other GCP services.
             </p>
           </div>
-          <img
-            src="/images/Google.png"
-            alt=""
-            className="md:w-1/2 m-auto"
-            style={width}
-          />
+          <div className="flex basis-full md:basis-1/2 justify-center">
+            <CustomImage
+              src="/images/Google.png"
+              alt=""
+              width={400}
+              height={350} />
+          </div>
         </div>
 
-        <div className="md:flex my-5 pt-8 justify-between items-center lg:px-12">
-          <div className="flex flex-col gap-4 md:w-2/5 md:order-2">
+        <div className="flex flex-col md:flex-row-reverse my-5 pt-8 justify-between items-center">
+          <div className="flex flex-col basis-full md:basis-1/2 gap-4 px-4 md:px-6">
             <h2 className="text-3xl font-extrabold">Azure</h2>
             <p className="text-base font-extralight">
               For most of our enterprise solution implementations, our team has
@@ -154,16 +155,17 @@ const Technology = () => {
               Azure services extensively.
             </p>
           </div>
-          <img
-            src="images/AZURE.png"
-            alt=""
-            className="md:w-1/2 md:order-1 m-auto"
-            style={width}
-          />
+          <div className="flex basis-full md:basis-1/2 justify-center">
+            <CustomImage
+              src="/images/AZURE.png"
+              alt=""
+              width={400}
+              height={350} />
+          </div>
         </div>
 
-        <div className="md:flex my-5 pt-8 justify-between items-center lg:px-12">
-          <div className="flex flex-col gap-4 md:w-2/5">
+        <div className="flex flex-col md:flex-row my-5 pt-8 justify-between items-center">
+          <div className="flex flex-col basis-full md:basis-1/2 gap-4 px-4 md:px-6">
             <h2 className="text-3xl font-extrabold">oracle</h2>
             <p className="text-base font-extralight">
               Oracle We have been enabling enterprises running on Oracle ERP and
@@ -171,22 +173,24 @@ const Technology = () => {
               existing Oracle stack. We have implemented a large scale.
             </p>
           </div>
-          <img
-            src="/images/ORACLE.png"
-            alt=""
-            className="md:w-1/2 m-auto"
-            style={width}
-          />
+          <div className="flex basis-full md:basis-1/2 justify-center">
+            <CustomImage
+              src="/images/oracle.png"
+              alt=""
+              className="md:w-1/2 m-auto"
+              width={400}
+              height={350} />
+          </div>
         </div>
 
-        <div className="md:flex my-5 pt-8 justify-between items-center lg:px-12">
-          <div className="flex flex-col gap-4 md:w-2/5 md:order-2">
+        <div className="flex flex-col md:flex-row-reverse my-5 pt-8 justify-between items-center">
+          <div className="flex flex-col basis-full md:basis-1/2 gap-4 px-4 md:px-6">
             <h2 className="text-3xl font-extrabold">
               Data Engineering & Deep Learning
             </h2>
             <h4 className="text-xl">Databases</h4>
             <p className="text-base font-extralight">
-              In today's Data Economy, enterprises need Data to be readily
+              In today Data Economy, enterprises need Data to be readily
               available for analysis at scale and make informed decisions.
             </p>
             <p className="text-base font-extralight">
@@ -198,21 +202,22 @@ const Technology = () => {
               data securely at scale and deliver faster query responses.
             </p>
             <p className="text-base font-extralight">
-              Our team's expertise across all prevalent Databases, Data
+              Our team expertise across all prevalent Databases, Data
               Warehouses and Data Lake technologies makes this part of the
               Digital Transformation journey easier.
             </p>
           </div>
-          <img
-            src="/images/AI_ML.png"
-            alt=""
-            className="md:w-1/2 md:order-1 m-auto"
-            style={width}
-          />
+          <div className="flex basis-full md:basis-1/2 justify-center">
+            <CustomImage
+              src="/images/AI_ML.png"
+              alt=""
+              width={400}
+              height={350} />
+          </div>
         </div>
 
-        <div className="md:flex my-5 pt-8 justify-between items-center lg:px-12">
-          <div className="flex flex-col gap-4 md:w-2/5 md:px-6">
+        <div className="flex flex-col md:flex-row my-5 pt-8 justify-between items-center">
+          <div className="flex flex-col basis-full md:basis-1/2 gap-4 px-4 md:px-6">
             <h2 className="text-3xl font-extrabold">Devops</h2>
             <p className="text-base font-extralight">
               For every successful Digital Transformation project, we engage our
@@ -224,14 +229,16 @@ const Technology = () => {
               faster through their software solutions/products.
             </p>
           </div>
-          <img
-            src="/images/Devops.png"
-            className="md:w-1/2 m-auto"
-            style={width}
-          />
+          <div className="flex basis-full md:basis-1/2 justify-center">
+            <CustomImage
+              src="/images/Devops.png"
+              width={400}
+              height={350}
+              alt="devops-image" />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

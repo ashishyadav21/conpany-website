@@ -25,7 +25,8 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         'home-background': "url('/images/home-background.jpg')",
-        'event':"url('/images/event.jpg')"
+        'event':"url('/images/event.jpg')",
+        'technology-image': "url(/images/technologybaner2.jpg)"
 
       },
       scrollSnapType: {

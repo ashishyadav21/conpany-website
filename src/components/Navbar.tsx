@@ -23,16 +23,16 @@ const Navbar = () => {
                 </div>
                 <div className='flex flex-row justify-between'>
                     <Link href="/">
-                        <div className={`text-lg p-2 justify-center text-gray-500 ${route === '/' ? 'border-b-2 border-yellow-500' : ''}`}>Home</div>
+                        <div className={`text-sm p-2 justify-center text-gray-500 ${route === '/' ? 'border-b-2 border-yellow-500' : ''}`}>Home</div>
                     </Link>
                     <Link href="/solutions">
-                        <div className={classNames('text-lg p-2 justify-center text-gray-500', route === '/solutions' ? 'border-b-2 border-yellow-500' : '')}>Solutions</div>
+                        <div className={classNames('text-sm p-2 justify-center text-gray-500', route === '/solutions' ? 'border-b-2 border-yellow-500' : '')}>Solutions</div>
                     </Link>
                     <Link href="/technology">
-                        <div className={classNames('text-lg p-2 justify-center text-gray-500', route === '/technology' ? 'border-b-2 border-yellow-500' : '')}>Technology</div>
+                        <div className={classNames('text-sm p-2 justify-center text-gray-500', route === '/technology' ? 'border-b-2 border-yellow-500' : '')}>Technology</div>
                     </Link>
                     <Link href="/services">
-                        <div className={classNames('text-lg p-2 justify-center text-gray-500', route === '/services' ? 'border-b-2 border-yellow-500' : '')}>Services</div>
+                        <div className={classNames('text-sm p-2 justify-center text-gray-500', route === '/services' ? 'border-b-2 border-yellow-500' : '')}>Services</div>
                     </Link>
                 </div>
 
