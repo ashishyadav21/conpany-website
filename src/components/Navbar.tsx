@@ -2,10 +2,8 @@
 
 import React from 'react'
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
 import Link from 'next/link';
 import classNames from 'classnames';
-
 
 
 const Navbar = () => {

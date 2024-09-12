@@ -1,6 +1,11 @@
+"use client"
+
 import React from 'react'
+import { useRouter } from "next/navigation";
 
 const Service = () => {
+    const router = useRouter()
+
     return (
         <div>
             <div className="scroll-snap-y scroll-smooth">
@@ -106,14 +111,110 @@ const Service = () => {
                     <section className="bg-gray-100 py-16">
                         <div className="container mx-auto text-center">
                             <h2 className="text-4xl font-extrabold mb-8 text-black">Why Choose Us?</h2>
-                            <p className="text-lg text-gray-700 mb-6">
-                                With years of experience and cutting-edge technologies, we deliver scalable, secure, and reliable solutions.
-                            </p>
-                            <ul className="text-left list-disc list-inside text-gray-700 space-y-3">
-                                <li>Expertise in enterprise-level applications</li>
-                                <li>Custom-built SaaS and mobile solutions</li>
-                                <li>Proven track record of success in multiple industries</li>
-                            </ul>
+                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg border-b-baseTextMedEmphasis hover:translate-x-5 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                                <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
+                                <div className='p-5 justify-center'>
+                                    <h3 className='text-black text-xl font-bold p-2 text-left'>Proven Expertise</h3>
+                                    <p className='text-black font-light text-left p-1'>
+                                        With years of experience in web development,
+                                        <br></br>
+                                        our team brings deep technical expertise across a wide range of industries.
+                                        <br></br>
+                                        From crafting bespoke websites to developing enterprise-grade applications,
+                                        <br></br>
+                                        we have successfully delivered hundreds of projects that meet both business and technical requirements.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg border-b-baseTextMedEmphasis hover:translate-x-10 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                                <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
+                                <div className='p-5 justify-center'>
+                                    <h3 className='text-black text-xl font-bold p-2 text-left'>Custom Solutions</h3>
+                                    <p className='text-black font-light text-left p-1'>
+                                        We understand that no two businesses are alike. That’s why we offer tailored web solutions
+                                        <br></br>
+                                        designed to align with your specific goals, target audience, and brand identity.
+                                        <br></br>
+                                        Whether you need a robust e-commerce platform, an interactive corporate site,
+                                        <br></br>
+                                        or a dynamic web app, we create solutions that fit your business perfectly.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg border-b-baseTextMedEmphasis hover:translate-x-10 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                                <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
+                                <div className='p-5 justify-center'>
+                                    <h3 className='text-black text-xl font-bold p-2 text-left'>Cutting-Edge Technology</h3>
+                                    <p className='text-black font-light text-left p-1'>
+                                        We leverage the latest web technologies and frameworks to ensure
+                                        <br></br>
+                                        your website is fast, secure, scalable, and future-proof.
+                                        <br></br>
+                                        From responsive design to custom backend systems,
+                                        <br></br>
+                                        our tech stack guarantees optimal performance on every device and platform.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg border-b-baseTextMedEmphasis hover:translate-x-10 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                                <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
+                                <div className='p-5 justify-center'>
+                                    <h3 className='text-black text-xl font-bold p-2 text-left'>Client-Centric Approach</h3>
+                                    <p className='text-black font-light text-left p-1'>
+                                        We pride ourselves on building long-term relationships with our clients.
+                                        <br></br>
+                                        Throughout the entire project lifecycle,from discovery and design
+                                        <br></br>
+                                        to development and deployment, we collaborate closely with you to ensure we
+                                        <br></br>
+                                        deliver on time,within budget, and above expectations.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg hover:translate-x-5 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                                <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
+                                <div className='p-5 justify-center'>
+                                    <h3 className='text-black text-xl font-bold p-2 text-left'>Innovation-Driven</h3>
+                                    <p className='text-black font-light text-left p-1'>
+                                        Staying ahead of trends is key to building future-ready solutions.
+                                        <br></br>
+                                        Our team constantly explores new tools, trends, and technologies,
+                                        <br></br>
+                                        incorporating the latest advancements in UI/UX design,
+                                        <br></br>SEO optimization, and web security to give you a competitive edge.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg border-b-baseTextMedEmphasis hover:translate-x-10 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                                <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
+                                <div className='p-5 justify-center'>
+                                    <h3 className='text-black text-xl font-bold p-2 text-left'>Full-Service Support</h3>
+                                    <p className='text-black font-light text-left p-1'>
+                                        Our services don’t end at launch.
+                                        <br></br>
+                                        We offer full post-launch support, including maintenance,
+                                        <br></br>
+                                        updates, and ongoing optimization to ensure your site stays secure,
+                                        <br></br>
+                                        functional, and up-to-date with the latest industry standards.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg border-b-baseTextMedEmphasis hover:translate-x-10 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                                <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
+                                <div className='p-5 justify-center'>
+                                    <h3 className='text-black text-xl font-bold text-left'>Transparent Communication</h3>
+                                    <p className='text-black font-light text-left p-1'>
+                                        We believe in open and transparent communication throughout the entire process.
+                                        <br></br>
+                                        With regular updates, clear timelines, and an accessible team,
+                                        <br></br>
+                                        you’re always in the loop and confident in the project’s
+                                        <br></br>
+                                        progress.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
@@ -121,7 +222,8 @@ const Service = () => {
                         <div className="container mx-auto text-center">
                             <h2 className="text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
                             <p className="text-lg mb-6">Let’s work together to create innovative, scalable, and secure solutions.</p>
-                            <button className="w-[150px] h-12 sm:text-sm rounded-xl bg-white text-lg text-[#3c4aed] shadow-sm shadow-[#096ad0] transition-all duration-300 ease-in-out hover:-translate-y-1">
+                            <button className="w-[150px] h-12 sm:text-sm rounded-xl bg-white text-lg text-[#3c4aed] shadow-sm shadow-[#096ad0] transition-all duration-300 ease-in-out hover:-translate-y-1"
+                                onClick={() => router.push('/contact-us')}>
                                 Contact Us...
                             </button>
                         </div>
