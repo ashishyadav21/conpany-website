@@ -1,10 +1,10 @@
 import Navbar from "@/components/Navbar";
-import Solutions from "@/components/Solutions";
+import Contact from "@/components/ContactUS";
 
 export default function Home() {
     return (
         <main>
-            <Solutions />
+            <Contact />
         </main>
     );
 }

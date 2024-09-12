@@ -25,14 +25,14 @@ const Navbar = () => {
                     <Link href="/">
                         <div className={`text-sm p-2 justify-center text-gray-500 ${route === '/' ? 'border-b-2 border-yellow-500' : ''}`}>Home</div>
                     </Link>
-                    <Link href="/solutions">
-                        <div className={classNames('text-sm p-2 justify-center text-gray-500', route === '/solutions' ? 'border-b-2 border-yellow-500' : '')}>Solutions</div>
-                    </Link>
                     <Link href="/technology">
                         <div className={classNames('text-sm p-2 justify-center text-gray-500', route === '/technology' ? 'border-b-2 border-yellow-500' : '')}>Technology</div>
                     </Link>
                     <Link href="/services">
                         <div className={classNames('text-sm p-2 justify-center text-gray-500', route === '/services' ? 'border-b-2 border-yellow-500' : '')}>Services</div>
+                    </Link>
+                    <Link href="/contact-us">
+                        <div className={classNames('text-sm p-2 justify-center text-gray-500', route === '/contact-us' ? 'border-b-2 border-yellow-500' : '')}>Contact us</div>
                     </Link>
                 </div>
 
