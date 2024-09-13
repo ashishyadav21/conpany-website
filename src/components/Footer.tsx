@@ -35,11 +35,11 @@ const Footer = () => {
                 </div>
 
                 <div className="mb-6">
-                    <h3 className="text-lg font-semibold mb-4">Let's Meet</h3>
+                    <h3 className="text-lg font-semibold mb-4">Let&apos;s Meet</h3>
                     <ul className="space-y-2">
                         <li><a href="#" className="hover:text-gray-400">Info@greenfied.com</a></li>
-                        <li><a href="#" className="hover:text-gray-400 text-nowrap">414, 4th Floor, Star Mall</a></li>
-                        <li><a href="#" className="hover:text-gray-400 text-nowrap">Gurgaon, 122001</a></li>
+                        <li><a href="#" className="hover:text-gray-400 text-nowrap">414&#39; 4th Floor&#39; Star Mall</a></li>
+                        <li><a href="#" className="hover:text-gray-400 text-nowrap">Gurgaon&lsquo; 122001</a></li>
                         <li><a href="#" className="hover:text-gray-400 text-nowrap">+919671761787</a></li>
                     </ul>
                 </div>
