@@ -32,7 +32,8 @@ const Service = () => {
                                 for enterprises and startups.
                             </p>
                             <div className="mt-10 flex m-2 justify-center items-center">
-                                <button className="w-[150px] h-12 sm:text-sm rounded-xl bg-white text-lg text-[#3c4aed] shadow-sm shadow-[#096ad0] transition-all duration-300 ease-in-out hover:bg-[#096ad0] hover:text-white hover:-translate-y-1">
+                                <button className="w-[150px] h-12 sm:text-sm rounded-xl bg-white text-lg text-[#3c4aed] shadow-sm shadow-[#096ad0] transition-all duration-300 ease-in-out hover:bg-[#096ad0] hover:text-white hover:-translate-y-1"
+                                    onClick={() => router.push('/contact-us')}>
                                     Contact Us
                                 </button>
                             </div>
