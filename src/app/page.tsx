@@ -6,9 +6,13 @@ export default function Home() {
     <div>
       <div className="scroll-snap-y scroll-smooth">
 
-        <section className="h-screen bg-home-background bg-cover z-10 bg-center flex items-center justify-center">
-          <div className="h-screen bg-gradient-conic bg-cover z-10 bg-center flex items-center justify-center">
-          </div>
+        <section className="h-screen z-10 bg-center flex items-center justify-center">
+          <CustomImage
+            src="/images/developer_word_1.png"
+            alt='Developer_Work'
+            width={500}
+            height={700}
+          />
         </section>
 
         <section className="bg-white flex justify-center py-10">

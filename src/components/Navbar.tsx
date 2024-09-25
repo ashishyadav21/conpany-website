@@ -57,7 +57,7 @@ const Navbar = () => {
                     <Link href="/">
                         <div
                             onClick={toggleMenu}
-                            className={`text-sm p-2 w-full text-black font-extrabold text-left hover:bg-gray-800 hover:text-yellow-500 ${route === "/" ? "border-b-2 border-yellow-500" : ""}`}>
+                            className={`text-sm p-2 w-full text-black  text-left hover:bg-gray-800 hover:text-yellow-500 ${route === "/" ? "border-b-2 border-yellow-500" : ""}`}>
                             Home
                         </div>
                     </Link>
