@@ -56,7 +56,7 @@ const Service = () => {
                             <h2 className="text-4xl font-extrabold mb-10 text-black">Our Solutions</h2>
 
                             <div className="flex flex-wrap justify-center gap-8">
-                                <div className="bg-white w-[90%] min-[480px]:w-[50%] md:w-[31%] flex flex-col p-8 justify-center items-center rounded-lg shadow-sm shadow-gray-400 hover:shadow-gray-600 hover:shadow-2xl transition-all duration-300">
+                                <div className="bg-white w-[90%] sm:w-[50%] lg:w-[31%] flex flex-col p-8 justify-center items-center rounded-lg shadow-sm shadow-gray-400 hover:shadow-gray-600 hover:shadow-2xl transition-all duration-300">
                                     <h3 className="text-xl font-bold mb-4 text-gray-700">Enterprise Solutions</h3>
                                     <p className="text-gray-700 mb-6">
                                         Build robust and secure backend systems for enterprise platforms.
@@ -66,7 +66,7 @@ const Service = () => {
                                     </button>
                                 </div>
 
-                                <div className="bg-white w-[90%] min-[480px]:w-[50%] md:w-[31%] flex flex-col p-8 justify-center items-center rounded-lg shadow-sm shadow-gray-400 hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-out">
+                                <div className="bg-white w-[90%] sm:w-[50%] lg:w-[31%] flex flex-col p-8 justify-center items-center rounded-lg shadow-sm shadow-gray-400 hover:shadow-gray-600 hover:shadow-2xl transition-all duration-300">
                                     <h3 className="text-xl font-bold mb-4 text-gray-700">SaaS Development</h3>
                                     <p className="text-gray-700 mb-6">
                                         Scale your business with powerful and secure SaaS applications.
@@ -76,7 +76,7 @@ const Service = () => {
                                     </button>
                                 </div>
 
-                                <div className="bg-white w-[90%] min-[480px]:w-[50%] md:w-[31%] flex flex-col p-8 justify-center items-center rounded-lg shadow-sm shadow-gray-400 hover:shadow-gray-600 hover:shadow-2xl transition-all duration-300">
+                                <div className="bg-white w-[90%] sm:w-[50%] lg:w-[31%] flex flex-col p-8 justify-center items-center rounded-lg shadow-sm shadow-gray-400 hover:shadow-gray-600 hover:shadow-2xl transition-all duration-300">
                                     <h3 className="text-xl font-bold mb-4 text-gray-700">Mobile App Development</h3>
                                     <p className="text-gray-700 mb-6">
                                         Create seamless mobile experiences on iOS and Android.
@@ -86,7 +86,7 @@ const Service = () => {
                                     </button>
                                 </div>
 
-                                <div className="bg-white w-[90%] min-[480px]:w-[50%] md:w-[31%] flex flex-col p-8 justify-center items-center rounded-lg shadow-sm shadow-gray-400 hover:shadow-gray-600 hover:shadow-2xl transition-all duration-300">
+                                <div className="bg-white w-[90%] sm:w-[50%] lg:w-[31%] flex flex-col p-8 justify-center items-center rounded-lg shadow-sm shadow-gray-400 hover:shadow-gray-600 hover:shadow-2xl transition-all duration-300">
                                     <h3 className="text-xl font-bold mb-4 text-gray-700">Web Development</h3>
                                     <p className="text-gray-700 mb-6">
                                         Build robust and secure backend systems for enterprise platforms.
@@ -96,7 +96,7 @@ const Service = () => {
                                     </button>
                                 </div>
 
-                                <div className="bg-white w-[90%] min-[480px]:w-[50%] md:w-[31%] flex flex-col p-8 justify-center items-center rounded-lg shadow-sm shadow-gray-400 hover:shadow-gray-600 hover:shadow-2xl transition-all duration-300">
+                                <div className="bg-white w-[90%] sm:w-[50%] lg:w-[31%] flex flex-col p-8 justify-center items-center rounded-lg shadow-sm shadow-gray-400 hover:shadow-gray-600 hover:shadow-2xl transition-all duration-300">
                                     <h3 className="text-xl font-bold mb-4 text-gray-700">Product Development</h3>
                                     <p className="text-gray-700 mb-6">
                                         Build robust and secure backend systems for enterprise platforms.
@@ -112,7 +112,7 @@ const Service = () => {
                     <section className="bg-gray-100 py-16">
                         <div className="container mx-auto text-center">
                             <h2 className="text-4xl font-extrabold mb-8 text-black">Why Choose Us?</h2>
-                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg border-b-baseTextMedEmphasis hover:translate-x-5 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                            <div className='flex flex-col group relative p-5 mt-2 md:m-8 shadow-lg shadow-blue-900 md:w-full justify-center items-start h-25 md:h-50 rounded-lg border-b-baseTextMedEmphasis md:hover:translate-x-10 md:hover:shadow-xl md:skew-y-5 md:skew-x-3 transition-all duration-300 ease-in-out'>
                                 <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
                                 <div className='p-5 justify-center'>
                                     <h3 className='text-black text-xl font-bold p-2 text-left'>Proven Expertise</h3>
@@ -127,7 +127,7 @@ const Service = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg border-b-baseTextMedEmphasis hover:translate-x-10 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                            <div className='flex flex-col group relative p-5 mt-2 md:m-8 shadow-lg shadow-blue-900 md:w-full justify-center items-start h-25 md:h-50 rounded-lg border-b-baseTextMedEmphasis md:hover:translate-x-10 md:hover:shadow-xl md:skew-y-5 md:skew-x-3 transition-all duration-300 ease-in-out'>
                                 <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
                                 <div className='p-5 justify-center'>
                                     <h3 className='text-black text-xl font-bold p-2 text-left'>Custom Solutions</h3>
@@ -142,7 +142,7 @@ const Service = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg border-b-baseTextMedEmphasis hover:translate-x-10 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                            <div className='flex flex-col group relative p-5 mt-2 md:m-8 shadow-lg shadow-blue-900 md:w-full justify-center items-start h-25 md:h-50 rounded-lg border-b-baseTextMedEmphasis md:hover:translate-x-10 md:hover:shadow-xl md:skew-y-5 md:skew-x-3 transition-all duration-300 ease-in-out'>
                                 <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
                                 <div className='p-5 justify-center'>
                                     <h3 className='text-black text-xl font-bold p-2 text-left'>Cutting-Edge Technology</h3>
@@ -157,7 +157,7 @@ const Service = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg border-b-baseTextMedEmphasis hover:translate-x-10 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                            <div className='flex flex-col group relative p-5 mt-2 md:m-8 shadow-lg shadow-blue-900 md:w-full justify-center items-start h-25 md:h-50 rounded-lg border-b-baseTextMedEmphasis md:hover:translate-x-10 md:hover:shadow-xl md:skew-y-5 md:skew-x-3 transition-all duration-300 ease-in-out'>
                                 <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
                                 <div className='p-5 justify-center'>
                                     <h3 className='text-black text-xl font-bold p-2 text-left'>Client-Centric Approach</h3>
@@ -172,7 +172,7 @@ const Service = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg hover:translate-x-5 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                            <div className='flex flex-col group relative p-5 mt-2 md:m-8 shadow-lg shadow-blue-900 md:w-full justify-center items-start h-25 md:h-50 rounded-lg border-b-baseTextMedEmphasis md:hover:translate-x-10 md:hover:shadow-xl md:skew-y-5 md:skew-x-3 transition-all duration-300 ease-in-out'>
                                 <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
                                 <div className='p-5 justify-center'>
                                     <h3 className='text-black text-xl font-bold p-2 text-left'>Innovation-Driven</h3>
@@ -186,7 +186,7 @@ const Service = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg border-b-baseTextMedEmphasis hover:translate-x-10 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                            <div className='flex flex-col group relative p-5 mt-2 md:m-8 shadow-lg shadow-blue-900 md:w-full justify-center items-start h-25 md:h-50 rounded-lg border-b-baseTextMedEmphasis md:hover:translate-x-10 md:hover:shadow-xl md:skew-y-5 md:skew-x-3 transition-all duration-300 ease-in-out'>
                                 <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
                                 <div className='p-5 justify-center'>
                                     <h3 className='text-black text-xl font-bold p-2 text-left'>Full-Service Support</h3>
@@ -201,7 +201,7 @@ const Service = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='flex flex-col group relative p-5 m-8 shadow-lg shadow-blue-900 w-full justify-center items-start h-50 rounded-lg border-b-baseTextMedEmphasis hover:translate-x-10 hover:shadow-xl skew-y-5 skew-x-3 transition-all duration-300 ease-in-out'>
+                            <div className='flex flex-col group relative p-5 mt-2 md:m-8 shadow-lg shadow-blue-900 md:w-full justify-center items-start h-25 md:h-50 rounded-lg border-b-baseTextMedEmphasis md:hover:translate-x-10 md:hover:shadow-xl md:skew-y-5 md:skew-x-3 transition-all duration-300 ease-in-out'>
                                 <div className="absolute top-0 left-0 h-full w-0 bg-blue-900 group-hover:w-10 transition-all duration-300 ease-in-out"></div>
                                 <div className='p-5 justify-center'>
                                     <h3 className='text-black text-xl font-bold text-left'>Transparent Communication</h3>

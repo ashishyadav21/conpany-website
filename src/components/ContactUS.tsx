@@ -29,7 +29,7 @@ const ContactUs = () => {
             <div className="flex-container">
               <div className="container first py-10 px-6 bg-white shadow-sm shadow-gray-400 hover:shadow-2xl hover:shadow-gray-600 rounded-lg flex flex-row gap-3">
                 <div className="left">
-                 <FcCellPhone size={80}/>
+                  <FcCellPhone size={80} />
                 </div>
                 <div className="right grid gap-3">
                   <h3 className="text-xl font-bold">Call us directly at</h3>
@@ -38,7 +38,7 @@ const ContactUs = () => {
               </div>
               <div className="container second py-10 px-6 bg-white shadow-sm shadow-gray-400 hover:shadow-2xl hover:shadow-gray-600 rounded-lg flex flex-row gap-3">
                 <div className="left">
-                  <IoChatbubbleEllipsesOutline size={80}/>
+                  <IoChatbubbleEllipsesOutline size={80} />
                 </div>
                 <div className="right grid gap-3">
                   <h3 className="text-xl font-bold">Chat with Our Developer</h3>
