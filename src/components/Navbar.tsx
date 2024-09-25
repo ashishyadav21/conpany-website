@@ -12,7 +12,7 @@ const Navbar = () => {
     console.log("route ---->", route)
 
     return (
-        <div className='flex h-14 w-full fixed flex-col justify-center pl-[21px] pr-24 border-b-2 border-baseBorderLight bg-black'>
+        <div className='flex h-14 w-full fixed flex-col justify-center pl-[21px] pr-24 border-b-2 border-baseBorderLight bg-black z-10'>
             <div className='flex flex-row justify-between'>
                 <div className='flex items-center flex-row'>
                     <div className='ml-[20px] mr-[20px] flex flex-row items-center justify-center'>
