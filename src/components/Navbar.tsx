@@ -51,18 +51,36 @@ const Navbar = () => {
             </div>
 
             {menuOpen && (
-                <div className="lg:hidden flex flex-col items-start bg-black text-gray-500 w-full">
+                <div
+                    className={`lg:hidden flex flex-col bg-black text-gray-500 items-end p-3 w-[60%] self-end fixed top-14 right-0 h-auto bg-transparent transition-transform duration-300 ease-in-out ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
+                    style={{ transform: menuOpen ? 'translateX(0)' : 'translateX(100%)' }}>
                     <Link href="/">
-                        <div onClick={toggleMenu} className={`text-sm p-2 w-full text-left hover:bg-gray-800 hover:text-yellow-500 ${route === "/" ? "border-b-2 border-yellow-500" : ""}`}>Home</div>
+                        <div
+                            onClick={toggleMenu}
+                            className={`text-sm p-2 w-full text-black font-extrabold text-left hover:bg-gray-800 hover:text-yellow-500 ${route === "/" ? "border-b-2 border-yellow-500" : ""}`}>
+                            Home
+                        </div>
                     </Link>
                     <Link href="/technology">
-                        <div onClick={toggleMenu} className={classNames("text-sm p-2 w-full text-left hover:bg-gray-800 hover:text-yellow-500", route === "/technology" ? "border-b-2 border-yellow-500" : "")}>Technology</div>
+                        <div
+                            onClick={toggleMenu}
+                            className={`text-sm p-2 w-full text-black font-extrabold text-left hover:bg-gray-800 hover:text-yellow-500 ${route === "/technology" ? "border-b-2 border-yellow-500" : ""}`}>
+                            Technology
+                        </div>
                     </Link>
                     <Link href="/services">
-                        <div onClick={toggleMenu} className={classNames("text-sm p-2 w-full text-left hover:bg-gray-800 hover:text-yellow-500", route === "/services" ? "border-b-2 border-yellow-500" : "")}>Services</div>
+                        <div
+                            onClick={toggleMenu}
+                            className={`text-sm p-2 w-full text-black font-extrabold text-left hover:bg-gray-800 hover:text-yellow-500 ${route === "/services" ? "border-b-2 border-yellow-500" : ""}`}>
+                            Services
+                        </div>
                     </Link>
                     <Link href="/contact-us">
-                        <div onClick={toggleMenu} className={classNames("text-sm p-2 w-full text-left hover:bg-gray-800 hover:text-yellow-500", route === "/contact-us" ? "border-b-2 border-yellow-500" : "")}>Contact us</div>
+                        <div
+                            onClick={toggleMenu}
+                            className={`text-sm p-2 w-full font-extrabold text-black text-left hover:bg-gray-800 hover:text-yellow-500 ${route === "/contact-us" ? "border-b-2 border-yellow-500" : ""}`}>
+                            Contact us
+                        </div>
                     </Link>
                 </div>
             )}
