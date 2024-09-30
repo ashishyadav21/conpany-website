@@ -6,13 +6,7 @@ export default function Home() {
     <div>
       <div className="scroll-snap-y scroll-smooth">
 
-        <section className="h-screen z-10 bg-center flex items-center justify-center">
-          <CustomImage
-            src="/images/developer_word_1.png"
-            alt='Developer_Work'
-            width={500}
-            height={700}
-          />
+        <section className="h-[250px] sm:h-[350px] md:h-[500px] lg:h-screen bg-home-background bg-cover bg-center bg-no-repeat z-10 flex items-center justify-center">
         </section>
 
         <section className="bg-white flex justify-center py-10">
