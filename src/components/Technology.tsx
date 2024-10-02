@@ -2,9 +2,6 @@ import React from "react";
 import CustomImage from '@/components/CustomImage';
 
 const Technology = () => {
-  let width = {
-    width: "400px",
-  };
   return (
     <>
       <div className="bg-technology-image w-full h-80 bg-cover bg-center bg-opacity-90 bg-scroll bg-no-repeat">

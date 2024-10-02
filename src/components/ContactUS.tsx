@@ -1,13 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import emailjs from 'emailjs-com';
-import { useRouter } from "next/navigation";
 import CustomImage from "./CustomImage";
 import Modal from "./Modal";
-import { relative } from "path";
 
 const ContactUs = () => {
-  const router = useRouter();
   const [formData, setFormData] = useState({
     firstName: '',
     to_name: 'ashishplus4me@gmail.com',
@@ -23,18 +20,16 @@ const ContactUs = () => {
     e.preventDefault();
 
     emailjs.send(
-      'service_35vhb1a',           // Replace with your EmailJS Service ID
-      'template_xlvigdj',          // Replace with your EmailJS Template ID
-      formData,                    // The form data object
-      '0cFK8ENEnLd8f_-qI'            // Replace with your EmailJS Public Key (User ID)
+      'service_35vhb1a',
+      'template_xlvigdj',
+      formData,
+      '0cFK8ENEnLd8f_-qI'
     ).then(
       (result) => {
-        console.log('Email successfully sent!', result.text);
         setIsSent(true);
         setError('');
       },
       (error) => {
-        console.error('There was an error:', error.text);
         setIsSent(false);
         setError('Failed to send email.');
       }

@@ -7,9 +7,11 @@ interface CustomImageProps {
     height?: any;
     className?: string;
     priority?: boolean | undefined
+    layout?: string
+    objectFit?: string
 }
 
-const CustomImage: React.FC<CustomImageProps> = ({ src, alt, width, height, className, priority }) => {
+const CustomImage: React.FC<CustomImageProps> = ({ src, alt, width, height, className, priority, layout, objectFit }) => {
     return (
         <div className={className}>
             <Image
@@ -17,9 +19,10 @@ const CustomImage: React.FC<CustomImageProps> = ({ src, alt, width, height, clas
                 alt={alt}
                 width={width}
                 height={height}
-                loading='lazy'
                 className="object-cover"
-                priority={priority} // Tailwind CSS or any custom styles
+                priority={priority}
+                layout={layout}
+                objectFit={objectFit} // Tailwind CSS or any custom styles
             />
         </div>
     );

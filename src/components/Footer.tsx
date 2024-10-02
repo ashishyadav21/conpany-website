@@ -1,12 +1,8 @@
 "use client"
 
 import React from 'react'
-import { useRouter } from "next/navigation";
-
 
 const Footer = () => {
-    const router = useRouter()
-
     return (
         <footer className="bg-gray-800 w-full text-white py-8">
             <div className="container mx-auto w-full xs:w-[75%] columns-2 sm:columns-4 md:columns-4">

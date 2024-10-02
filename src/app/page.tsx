@@ -11,9 +11,15 @@ export default function Home() {
     <div>
       <div className="scroll-snap-y scroll-smooth">
 
-        <section className="h-[250px] sm:h-[350px] md:h-[500px] lg:h-screen bg-home-background bg-cover bg-center bg-no-repeat z-10 flex items-center justify-center">
+        <section className="relative h-[250px] sm:h-[350px] md:h-[500px] lg:h-screen overflow-hidden z-10 flex items-center justify-center">
+          <CustomImage
+            src="/images/home-background.jpg"
+            alt="Home Background"
+            layout="fill"
+            objectFit="cover"
+            className="absolute inset-0"
+          />
         </section>
-
         <section className="bg-white flex justify-center py-10">
           <div className="container max-w-4xl p-5 flex flex-col items-center">
             <div className="text-center text-gray-700 font-medium text-2xl sm:text-lg p-5 mt-5">
