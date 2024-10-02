@@ -1,6 +1,12 @@
+"use client"
+
 import React from 'react'
+import { useRouter } from "next/navigation";
+
 
 const Footer = () => {
+    const router = useRouter()
+
     return (
         <footer className="bg-gray-800 w-full text-white py-8">
             <div className="container mx-auto w-full xs:w-[75%] columns-2 sm:columns-4 md:columns-4">
@@ -18,9 +24,9 @@ const Footer = () => {
                 <div className="mb-6">
                     <h3 className="text-lg font-semibold mb-4">Company</h3>
                     <ul className="space-y-2">
-                        <li><a href="#" className="hover:text-gray-400">About us</a></li>
-                        <li><a href="#" className="hover:text-gray-400">Technology</a></li>
-                        <li><a href="#" className="hover:text-gray-400">Careers</a></li>
+                        <li><a href="/contact-us" className="hover:text-gray-400">About us</a></li>
+                        <li><a href="/technology" className="hover:text-gray-400">Technology</a></li>
+                        <li><a href="/services" className="hover:text-gray-400">Services</a></li>
                         <li><a href="#" className="hover:text-gray-400">Privacy Policy</a></li>
                     </ul>
                 </div>

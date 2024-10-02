@@ -1,104 +1,153 @@
 "use client";
-import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
-import { FcCellPhone } from "react-icons/fc";
-import React from "react";
+import React, { useState } from "react";
+import emailjs from 'emailjs-com';
 import { useRouter } from "next/navigation";
-import "./ContactUs.css";
+import CustomImage from "./CustomImage";
+import Modal from "./Modal";
+import { relative } from "path";
+
 const ContactUs = () => {
   const router = useRouter();
+  const [formData, setFormData] = useState({
+    firstName: '',
+    to_name: 'ashishplus4me@gmail.com',
+    lastName: '',
+    from_name: '',
+    message: ''
+  });
+
+  const [isSent, setIsSent] = useState(false);
+  const [error, setError] = useState('');
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    emailjs.send(
+      'service_35vhb1a',           // Replace with your EmailJS Service ID
+      'template_xlvigdj',          // Replace with your EmailJS Template ID
+      formData,                    // The form data object
+      '0cFK8ENEnLd8f_-qI'            // Replace with your EmailJS Public Key (User ID)
+    ).then(
+      (result) => {
+        console.log('Email successfully sent!', result.text);
+        setIsSent(true);
+        setError('');
+      },
+      (error) => {
+        console.error('There was an error:', error.text);
+        setIsSent(false);
+        setError('Failed to send email.');
+      }
+    );
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   return (
-    <div>
-      <div className="scroll-snap-y scroll-smooth">
-        <section className="h-[576px] bg-event bg-cover z-10 bg-center items-center justify-center">
-        </section>
+    <div className="scroll-snap-y scroll-smooth">
+      <section className="h-[576px] bg-cover z-10 bg-center flex items-center justify-center">
+        <CustomImage
+          src="/images/developer_word_1.png"
+          alt='Developer_Work'
+          width={500}
+          height={700}
+        />
+      </section>
 
-        <div className="container bg-gray-100 -mt-20 m-auto max-w-6xl p-8 text-black py-10 mb-10">
-          <div className="container text-center m-auto w-100 grid gap-3">
-            <h1 className="font-extrabold text-4xl sm:text-3xl">
-              CONTACT US ABOUT HUBSPOT'S SOFTWARE
-            </h1>
-            <p className="font-normal text-xl sm:text-lg mb-8 text-gray-400">
-              We'd love to show you how you can get more traffic and leads
-              increase your sales productivity. provide better customer service,
-              or all of the above! Here are a few ways to reach out to our sales
-              team.
-            </p>
-          </div>
-          <div className="gridcontainer">
-            <div className="flex-container">
-              <div className="container first py-10 px-6 bg-white shadow-sm shadow-gray-400 hover:shadow-2xl hover:shadow-gray-600 rounded-lg flex flex-row gap-3">
-                <div className="left">
-                  <FcCellPhone size={80} />
-                </div>
-                <div className="right grid gap-3">
-                  <h3 className="text-xl font-bold">Call us directly at</h3>
-                  <h2 className="text-2xl font-bold text-violet-700">+917015010257</h2>
-                </div>
+
+      <div className={`container bg-gray-100 -mt-20 mx-auto max-w-6xl p-8 text-black py-10 mb-10 rounded-lg shadow-lg ${isSent ? 'relative' : ''}`}>
+        {isSent &&
+          <Modal
+            type='success'
+            message="Email sent successfully!"
+            duration={5000}
+          />}
+        {error &&
+          <Modal
+            type='error'
+            message={error}
+          />}
+
+        <div className="text-center mx-auto space-y-4 max-w-3xl">
+          <h2 className="font-extrabold text-2xl md:text-3xl text-black">
+            Contact us about HubSpot&#39;s software
+          </h2>
+          <p className="text-lg md:text-lg font-light text-gray-500 leading-relaxed">
+            We&#39;d love to show you how you can get more traffic and leads,
+            increase your sales productivity, and provide better customer service.
+          </p>
+        </div>
+
+
+        <div className="mt-12 bg-white shadow-lg rounded-lg p-8">
+          <h3 className="text-3xl md:text-4xl font-bold text-center text-violet-700 mb-6">
+            Contact Us
+          </h3>
+          <p className="text-lg text-gray-500 text-center mb-8">
+            Need to get in touch? Fill out the form with your inquiry.
+          </p>
+
+          <form onSubmit={sendEmail} className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="flex flex-col">
+                <label htmlFor="firstName" className="text-lg font-semibold text-gray-700">First Name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  className="mt-1 p-3 border rounded-md focus:ring-2 focus:ring-violet-500 focus:outline-none"
+                  onChange={handleChange}
+                  required
+                />
               </div>
-              <div className="container second py-10 px-6 bg-white shadow-sm shadow-gray-400 hover:shadow-2xl hover:shadow-gray-600 rounded-lg flex flex-row gap-3">
-                <div className="left">
-                  <IoChatbubbleEllipsesOutline size={80} />
-                </div>
-                <div className="right grid gap-3">
-                  <h3 className="text-xl font-bold">Chat with Our Developer</h3>
-                  <button className="py-2 px-5 bg-violet-500 text-white font-semibold rounded shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75 transition-all duration-300 ease-in-out hover:-translate-y-1">
-                    CHAT
-                  </button>
-                </div>
+              <div className="flex flex-col">
+                <label htmlFor="lastName" className="text-lg font-semibold text-gray-700">Last Name</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  className="mt-1 p-3 border rounded-md focus:ring-2 focus:ring-violet-500 focus:outline-none"
+                  onChange={handleChange}
+                  required
+                />
               </div>
             </div>
 
-            <div className="container form py-10 text-center px-6 grid gap-6 bg-white shadow-sm shadow-gray-400 hover:shadow-2xl hover:shadow-gray-600 rounded-lg">
-              <h3 className="text-4xl sm:text-3xl font-extrabold">
-                Contact Us
-              </h3>
-              <p className="font-normal text-xl sm:text-lg text-gray-600">
-                Need to get in touch with us? fill out the form with the inquiry{" "}
-              </p>
-              <form action="" className="grid gap-6">
-                <div className="input grid gap-1">
-                  <label htmlFor="fn" className=" text-left text-lg font-bold ">
-                    First name
-                  </label>
-                  <input
-                    type="text"
-                    className="focus:outline-none inputfield px-2 bg-gray-100"
-                  />
-                </div>
-                <div className="input grid gap-1">
-                  <label htmlFor="ln" className="text-left font-bold">
-                    Last name
-                  </label>
-                  <input
-                    type="text"
-                    className="focus:outline-none inputfield px-2 bg-gray-100"
-                  />
-                </div>
-                <div className="input grid gap-1">
-                  <label htmlFor="email" className="text-left font-bold">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    className="focus:outline-none inputfield px-2 bg-gray-100"
-                  />
-                </div>
-                <div className="input grid gap-1 text-left">
-                  <label htmlFor="text" className="font-bold">
-                    What can we help you with?
-                  </label>
-                  <textarea
-                    name="text"
-                    className="focus:outline-none p-2 bg-gray-100"
-                  ></textarea>
-                </div>
-                <button className="py-2 px-5 bg-violet-500 text-white font-semibold rounded shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75 transition-all duration-300 ease-in-out hover:-translate-y-1">
-                  Submit
-                </button>
-              </form>
+            <div className="flex flex-col">
+              <label htmlFor="from_name" className="text-lg font-semibold text-gray-700">Email</label>
+              <input
+                type="email"
+                name="from_name"
+                className="mt-1 p-3 border rounded-md focus:ring-2 focus:ring-violet-500 focus:outline-none"
+                onChange={handleChange}
+                required
+              />
             </div>
-          </div>
+
+            <div className="flex flex-col">
+              <label htmlFor="message" className="text-lg font-semibold text-gray-700">Message</label>
+              <textarea
+                name="message"
+                className="mt-1 p-3 border rounded-md focus:ring-2 focus:ring-violet-500 focus:outline-none"
+                onChange={handleChange}
+                rows={5}
+                required
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="py-3 px-6 bg-violet-600 text-white font-bold rounded-lg shadow-md hover:bg-violet-800 transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-violet-400"
+            >
+              Submit
+            </button>
+          </form>
+
+          {isSent && <p className="text-greenText mt-4 text-center">Email sent successfully!</p>}
+          {error && <p className="text-red-500 mt-4 text-center">{error}</p>}
         </div>
       </div>
     </div>
@@ -106,4 +155,3 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
-

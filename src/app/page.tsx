@@ -1,7 +1,12 @@
+"use client"
+
 import Link from 'next/link';
 import CustomImage from '@/components/CustomImage';
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter()
+
   return (
     <div>
       <div className="scroll-snap-y scroll-smooth">
@@ -20,7 +25,8 @@ export default function Home() {
               We love taking your vision to reality.
             </h2>
             <div className="mt-10">
-              <button className="w-[150px] h-12 sm:text-sm rounded-xl bg-white text-lg text-[#3c4aed] shadow-sm shadow-[#096ad0] transition-all duration-300 ease-in-out hover:bg-[#096ad0] hover:text-white hover:-translate-y-1">
+              <button className="w-[150px] h-12 sm:text-sm rounded-xl bg-white text-lg text-[#3c4aed] shadow-sm shadow-[#096ad0] transition-all duration-300 ease-in-out hover:bg-[#096ad0] hover:text-white hover:-translate-y-1"
+                onClick={() => router.push('/contact-us')}>
                 Contact Us
               </button>
             </div>
@@ -113,7 +119,8 @@ export default function Home() {
               <h3 className="slide-in-right text-2xl md:text-3xl font-normal text-gray-600">
                 Business Success
               </h3>
-              <button className="w-[180px] p-2 h-12 rounded-xl bg-[#ffcf66] text-lg text-white shadow-sm shadow-yellow-200 transition-all duration-300 ease-in-out hover:-translate-y-1 mt-6">
+              <button className="w-[180px] p-2 h-12 rounded-xl bg-[#ffcf66] text-lg text-white shadow-sm shadow-yellow-200 transition-all duration-300 ease-in-out hover:-translate-y-1 mt-6"
+                onClick={() => router.push('/contact-us')}>
                 14 Day Free Trial
               </button>
             </div>
